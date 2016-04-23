@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset CSS */
+
+img {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+
+
+/* Your CSS Starts here */
+/* Place google fonts code here */
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,600,400); */
+/* Place google fonts code here */
+
+html,body {
+
+}
+.wrapper {
+	position: relative;
+    background-color: none;
+	width: 100%;
+    max-width: 800px;
+    height: auto;
+	margin-left:auto;
+	margin-right:auto;
+		
+}
+.logo{
+    position:absolute;
+    width:30%;
+    height:auto;
+    float:left;
+    overflow:hidden;
+    margin-top:10px;
+    
+}
+
+.headline {
+    position: absolute;
+	background-color: none;
+	width: 87.5%;
+    height: auto;
+    text-align: right;
+	margin-left: 2.5%;
+	margin-top: 70px;
+	margin-bottom: none;	
+	overflow: hidden; /*fixes problem with top margin in child*/
+	
+}
+
+/*nav.fixed-header {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    
+}*/
+.mainmenu{
+    position:absolute;
+    max-width:800px;
+    width:10%;
+    height:auto;
+    float:right;
+    overflow:hidden;
+    
+}
+.menubar{
+    position:fixed;
+    width:100%;
+    height:70px;
+    float:left;
+    overflow:hidden;
+    background-color:#231F20;
+    opacity:.8;
+    margin-top:50px;
+    margin-left:auto;
+    z-index:10;
+    
+}
+.menubar2{
+    position:fixed;
+    width:100%;
+    height:20px;
+    float:left;
+    overflow:hidden;
+    background-color:#231F20;
+    margin-top:120px;
+    margin-left:auto;
+    z-index:10;
+    
+    
+}
+.hero {
+	position: relative;
+    background-color: none;
+	width: 100%;
+    max-width:1200px;
+    height: auto;
+	margin-left:auto;
+	margin-right:auto;
+    margin-top:150px;
+    float:left;
+    overflow:hidden;
+    
+}
+.featured{
+    position:relative;
+    background-color:#231F20;
+    width:100%;
+    height:140px;
+    float:left;
+    overflow:hidden;
+    
+}
+h1{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 2.5em;
+	color: white;
+	font-weight: lighter ;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 20px;
+	margin-bottom: none;
+    margin-left:24px;
+    
+}
+h5{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 1em;
+	color: white;
+	font-weight: lighter ;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 25px;
+	margin-bottom: none;
+    margin-left:24px;
+      
+}
+h2{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 1.5em;
+	color: darkblue;
+	font-weight: bold ;
+	letter-spacing: 1px;
+}
+.article{
+    position:relative;
+    height:auto;
+    width:100%;
+    height:auto;
+    float:left;
+    overflow:hidden;
+    margin-left:72px;
+    margin-top:40px;
+}
+h3{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: .9em;
+	color: black;
+	font-weight: lighter ;
+	letter-spacing: 1px; 
+}
+.author{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	color: black;
+	font-weight: bold ;
+	letter-spacing: 1px;
+}
+p{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 1em;
+	color: black;
+	font-weight: lighter ;
+	letter-spacing: none;
+	line-height: none;
+    height:auto;
+    overflow:hidden;
+    float:left;
+    
+}
+.clickmore{
+   font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: .9em;
+	color: black;
+	font-weight: bolder;
+    height:auto;
+    overflow:hidden;
+    float:left; 
+    margin-top:90px;
+}
+
