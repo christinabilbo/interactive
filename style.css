@@ -1,0 +1,803 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset CSS */
+
+img {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+
+
+/* Your CSS Starts here */
+/* Place google fonts code here */
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,600,400); */
+/* Place google fonts code here */
+
+html,body {
+
+}
+.wrapper {
+	position: relative;
+    background-color: none;
+	width: 100%;
+    max-width: 800px;
+    height: auto;
+	margin-left:auto;
+	margin-right:auto;
+		
+}
+.logo{
+    position:absolute;
+    width:30%;
+    height:auto;
+    float:left;
+    overflow:hidden;
+    margin-top:10px;
+    margin-left:25px;
+    
+}
+.fb{
+    position:relative;
+    float:right;
+    background-color:none;
+    width:8%;
+    margin-top:20px;
+    
+    
+    
+}
+.menudrop {
+	position: absolute;
+	background: #231F20;
+	width: 70%;
+	height: auto;
+	left: 0%;
+	top:6.9%;
+	overflow: hidden;
+	z-index: 100;
+	display: none;
+	
+}
+
+.hamburger {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height:456px;
+}
+
+.hamburger_bar li {
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	border-bottom: solid;
+	border-color: #FFFFE5;
+	border-width: 1px;
+	margin-left: 0%;
+	margin-top: 5%;
+	text-indent: 5%;
+	overflow: hidden;
+	z-index: 50;
+	
+}
+
+.hamburger a {
+	text-decoration: none;
+	color: white;
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 2em;
+    font-weight:bold;
+	line-height: 2em;
+	margin-left: auto;
+    margin-right: auto;
+    margin-left:2.5%;
+	
+}
+
+.hamburger li:hover {
+	margin-top: 6.25%;
+	
+}
+li a {
+	font-family: 'Georgia', times, serif;
+	font-size: .75em;
+	color: #AAA;
+    line-height: 1.75em;
+	text-decoration: none;
+}
+.search{
+    position:relative;
+    float:right;
+    margin-right:25px;
+    margin-top:15px;
+    height:auto;
+    width:22%;
+    
+    
+}
+
+
+
+/*nav.fixed-header {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    
+}*/
+
+.mainmenu{
+    position:fixed;
+    max-width:800px;
+    width:10%;
+    height:auto;
+    float:right;
+    overflow:hidden;
+    margin-top:80px;
+    z-index:11;
+}
+.menubar{
+    position:fixed;
+    width:100%;
+    height:70px;
+    float:left;
+    overflow:hidden;
+    background-color:#231F20;
+    opacity:.8;
+    margin-top:70px;
+    margin-left:auto;
+    z-index:10;
+    
+}
+.menubar2{
+    position:fixed;
+    width:100%;
+    height:20px;
+    float:left;
+    overflow:hidden;
+    background-color:#231F20;
+    margin-top:140px;
+    margin-left:auto;
+    z-index:10;
+    
+    
+}
+.hero {
+	position: relative;
+    background-color: none;
+	width: 100%;
+    max-width:1200px;
+    height: auto;
+	margin-left:auto;
+	margin-right:auto;
+    margin-top:100px;
+    float:left;
+    overflow:hidden;
+    
+}
+.featured{
+    position:relative;
+    background-color:#231F20;
+    width:100%;
+    height:140px;
+    float:left;
+    overflow:hidden;
+    
+}
+h1{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 2.5em;
+	color: white;
+	font-weight: lighter ;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 20px;
+	margin-bottom: none;
+    margin-left:24px;
+    
+}
+h5{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 1em;
+	color: white;
+	font-weight: lighter ;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 25px;
+	margin-bottom: none;
+    margin-left:24px;
+      
+}
+h2{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 1.7em;
+	color: darkblue;
+	font-weight: bold ;
+	letter-spacing: 1px;
+}
+.article{
+    position:relative;
+    height:auto;
+    width:100%;
+    height:auto;
+    float:left;
+    overflow:hidden;
+    margin-left:72px;
+    margin-top:40px;
+}
+h3{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: .9em;
+	color: black;
+	font-weight: lighter ;
+	letter-spacing: 1px; 
+}
+.author{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	color: black;
+	font-weight: bold ;
+	letter-spacing: 1px;
+}
+p{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 1em;
+	color: black;
+	font-weight: lighter ;
+	letter-spacing: none;
+	line-height: 1.2em;
+    height:auto;
+    overflow:hidden;
+    float:left;
+    
+}
+.clickmore{
+   font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: .9em;
+	color: black;
+	font-weight: bold;
+    height:auto;
+    overflow:hidden;
+    float:left; 
+    margin-top:90px;
+}
+hr{
+    position:relative;
+    overflow:hidden;
+    margin-left:72px;
+    width:84%;
+    
+}
+.article1{
+    position:relative;
+    float:left;
+    overflow:hidden;
+    width:37.5%;
+    height:350px;
+    margin-left:72px;
+    margin-bottom:20px;
+}
+h4{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    text-align:center;
+    font-size:1.5em;
+    font-weight:bold;
+    
+}
+.description{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    font-size:.9em;
+    font-weight:lighter;
+    margin-left:20px;
+    
+    
+}
+.drop{
+    font-family:'Futura Std','Helvetica', 'sans-serif';
+    font-weight:bold;
+    font-size:1.5em;
+    float:left;
+    overflow:hidden;
+    margin-left:72px;
+    margin-bottom:20px;
+    margin-top:20px;
+    height:auto;
+}
+.topic-select{
+     font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    font-size:.8em;
+    height:40px;
+    width:200px;
+    
+}
+.ad{
+    position:relative;
+    width:90%;
+    float:left;
+    margin-left:54px;
+    
+}
+
+a{
+}
+h6{
+     color:white;
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    font-weight:lighter;
+    font-size:.9em;
+    float:none;
+    text-align:center;
+    margin-top:50px;
+    width:100%;
+}
+.copy{
+    color:white;
+}
+.button{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    font-size:.8em;
+    font-weight:bold;
+    color:white;
+    background-color:black;
+    width:20%;
+    height: 40px;
+    float:left;
+    margin-left:314px; 
+    border-color:gray;
+}
+.signup{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    font-size:.8em;
+    font-weight:bold;
+    color:white;
+    position:relative;
+    float:left;
+    width:15%;
+    background-color:#231F20;
+    border-color:white;
+    border-width:.4em;
+    margin-left:50%;
+    top:20px;
+    height:auto;
+    
+    
+}
+.bottom{
+    display:none;
+}
+footer{
+    position:relative;
+    float:left;
+    overflow:hidden;
+    background-color:#231F20;
+    height:180px;
+    width:100%;
+    height:auto;
+    margin-top:26px;
+    
+    
+    
+    
+}
+
+.desktop{
+    display:none;
+    
+}
+.desk{
+    display:none;
+}
+a:hover {
+	color: darkblue;
+	text-decoration: none;
+}
+
+/* Turns off link borders on Firefox */
+a:active, a:focus {outline: 0;}
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+/*MEDIA QUERY STARTS HERE UGH STOP OVERLOOKING THIS BREAK HERE*/
+
+/* Media Query for desktops with at least 1000px wide windows */
+@media screen and (min-width:1200px)
+{
+ 
+li {
+	width: 100%;
+}  
+.wrapper {
+	position: relative;
+    background-color: none;
+	width: 100%;
+    max-width: 1200px;
+    height: auto;
+	margin-left:auto;
+	margin-right:auto;
+		
+}
+.logo{
+    position:absolute;
+    width:30%;
+    height:auto;
+    float:left;
+    overflow:hidden;
+    margin-top:1px;
+    margin-left:25px;
+    
+}
+.fb{
+    position:relative;
+    float:right;
+    background-color:none;
+    width:8%;
+    margin-top:20px;
+    
+    
+    
+}
+.menudrop {
+	position: fixed;
+	width: 100%;
+	height: 90px;
+	left: 0%;
+	overflow: hidden;
+	z-index: 11;
+	display: inline-block;
+    margin-top:18px;
+    background-color:#231F20;
+}
+
+li a {
+	font-family: 'Georgia', times, serif;
+	font-size: .75em;
+	color: white;
+    line-height: 1.75em;
+	text-decoration: none;
+    display:inline-block;
+    float:left;
+    z-index:12;
+}
+.search{
+    position:relative;
+    float:right;
+    margin-right:400px;
+    margin-top:15px;
+    height:auto;
+    width:20%;
+    z-index:20;
+    display:;
+    
+    
+}
+
+    .signup{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    font-size:.8em;
+    font-weight:bold;
+    color:white;
+    position:absolute;
+    float:left;
+    width:30%;
+    background-color:#231F20;
+    border-color:white;
+    border-width:.4em;
+    top:20px;
+    height:auto;
+    margin-right:790px;
+
+    
+    
+}
+/*nav.fixed-header {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    
+}*/
+
+.mainmenu{
+    position:fixed;
+    max-width:800px;
+    width:10%;
+    height:auto;
+    float:right;
+    overflow:hidden;
+    margin-top:80px;
+    z-index:1;
+    display:none;
+}
+.menubar{
+    position:fixed;
+    width:40%;
+    height:60px;
+    float:right;
+    overflow:hidden;
+    background-color:none;
+    opacity:1;
+    margin-top:80px;
+    margin-left:44%;
+    z-index:16;
+    
+}
+.menubar2{
+    position:fixed;
+    width:100%;
+    height:20px;
+    float:left;
+    overflow:hidden;
+    background-color:#231F20;
+    margin-top:140px;
+    margin-right:1px;
+    z-index:10;
+    display:none;
+    
+    
+}
+.hero {
+	position: relative;
+    background-color: none;
+	width: 100%;
+    max-width:1200px;
+    height: auto;
+	margin-left:none;
+	margin-right:none;
+    margin-top:100px;
+    float:left;
+    overflow:hidden;
+    
+}
+.featured{
+    position:relative;
+    background-color:#231F20;
+    width:100%;
+    height:140px;
+    float:left;
+    overflow:hidden;
+    
+}
+h1{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 2.5em;
+	color: white;
+	font-weight: lighter ;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 20px;
+	margin-bottom: none;
+    margin-left:24px;
+    
+}
+h5{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 1em;
+	color: white;
+	font-weight: lighter ;
+	letter-spacing: none;
+	line-height: none;
+	margin-top: 25px;
+	margin-bottom: none;
+    margin-left:24px;
+      
+}
+h2{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 1.7em;
+	color: darkblue;
+	font-weight: bold ;
+	letter-spacing: 1px;
+}
+.article{
+    position:relative;
+    height:auto;
+    width:100%;
+    height:auto;
+    float:left;
+    overflow:hidden;
+    margin-left:72px;
+    margin-top:40px;
+}
+h3{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: .9em;
+	color: black;
+	font-weight: lighter ;
+	letter-spacing: 1px; 
+}
+.author{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	color: black;
+	font-weight: bold ;
+	letter-spacing: 1px;
+}
+p{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: 1em;
+	color: black;
+	font-weight: lighter ;
+	letter-spacing: none;
+	line-height: 1.2em;
+    height:auto;
+    overflow:hidden;
+    float:left;
+    
+}
+.clickmore{
+   font-family:'Univers LT Std','Helvetica', 'sans-serif';
+	font-size: .9em;
+	color: black;
+	font-weight: bold;
+    height:auto;
+    overflow:hidden;
+    float:left; 
+    margin-top:90px;
+}
+hr{
+    position:relative;
+    overflow:hidden;
+    margin-left:72px;
+    width:84%;
+    
+}
+.article1{
+    position:relative;
+    float:left;
+    overflow:hidden;
+    width:50%;
+    max-width:28%;
+    height:350px;
+    margin-left:72px;
+    margin-bottom:20px;
+}
+h4{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    text-align:center;
+    font-size:1.5em;
+    font-weight:bold;
+}
+.description{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    font-size:.9em;
+    font-weight:lighter;
+    margin-left:20px;
+    
+    
+}
+.drop{
+    font-family:'Futura Std','Helvetica', 'sans-serif';
+    font-weight:bold;
+    font-size:1.5em;
+    float:right;
+    overflow:hidden;
+    margin-left:72px;
+    margin-bottom:20px;
+    margin-top:20px;
+    height:auto;
+}
+.topic-select{
+     font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    font-size:.8em;
+    height:40px;
+    width:100%;
+    
+}
+.ad{
+    position:relative;
+    width:90%;
+    float:left;
+    margin-left:54px;
+    
+}
+
+a{
+}
+h6{
+     color:white;
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    font-weight:lighter;
+    font-size:.9em;
+    float:none;
+    text-align:center;
+    margin-top:50px;
+    width:100%;
+}
+.copy{
+    color:white;
+}
+.button{
+    font-family:'Univers LT Std','Helvetica', 'sans-serif';
+    font-size:.8em;
+    font-weight:bold;
+    color:white;
+    background-color:black;
+    width:20%;
+    height: 40px;
+    float:left;
+    margin-left:40%; 
+    border-color:gray;
+}
+.bottom{
+    display:none;
+}
+footer{
+    position:relative;
+    float:left;
+    overflow:hidden;
+    background-color:#231F20;
+    height:180px;
+    width:100%;
+    height:auto;
+    margin-top:26px;
+    
+    
+    
+    
+}
+a:hover {
+	color: darkblue;
+	text-decoration: none;
+}
+
+/* Turns off link borders on Firefox */
+a:active, a:focus {outline: 0;}
+
+
+  
+}
