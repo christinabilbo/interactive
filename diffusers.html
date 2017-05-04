@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        
+        <!--Don't forget to fill these out!-->
+        <title>Shop</title>
+        <meta name="description" content="Soy Candle Company" />
+        
+        
+        <!--Links to the main Style Sheet-->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        
+        <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+        <script src="js/modernizr.js"></script>
+        
+        <!--Makes the site so it won't scale down on small devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        
+		<script src="jquery.bxslider.min.js"></script>
+		<!-- bxSlider CSS file -->
+		<link href="jquery.bxslider.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <!--contains nav-->
+        <div class="wrapper">
+            <div id="cart">
+                <a href="form.html">
+                    <img src="images/cart_icon.png">
+                </a>
+            </div>
+            
+            <a href="#" onclick="toggle_visibility('menu');">
+                <nav class="menu_button nodesk">&#9776;</nav>
+            </a>
+
+            <nav id="menu">
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="candles.html"><li>SHOP</li></a>
+                    <a href="form.html"><li>ABOUT</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+                    <a href="sign%20in.html"><li>LOGIN</li></a>
+                </ul>
+            </nav>
+        </div>
+        
+        <!--contains logo-->
+        <div class="bar">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png"/>
+                </a>
+            </div>
+        </div>
+        
+        
+        <!--slider images-->
+          <div id="shophero">
+                <h1>
+                   <span class="oil">PURE ESSENTIAL OILS</span>
+                </h1>
+                <img src="images/shop%20hero.jpg">
+            </div>
+			</div>
+        
+        <button>
+            <a href="candles.html">CANDLES</a>
+        </button>
+        
+        <button>
+            <a href="diffusers.html">DIFFUSERS</a>
+        </button>
+        
+        <!--section images-->
+            <a href="shop1.html">
+            <section class="prod">
+            <img src="images/black_currant_oil.jpg"/>
+            <h2><span class="info">Black Currant  Diffuser 8 oz. $22.99</span></h2>
+            </section>
+        </a>
+        
+        <a href="shop1.html">
+            <section class="prod">
+            <img src="images/fig_tree_oil.jpg"/>
+            <h2><span class="info">Fig Tree Diffuser 8 oz. $22.99</span></h2>
+            </section>
+            </a>
+        
+        <a href="shop1.html">
+            <section class="prod">
+            <img src="images/forest_amber_oil.jpg"/>
+            <h2><span class="info">Forest Amber Diffuser 8 oz. $22.99</span></h2>
+            </section>
+            </a>
+        
+        <a href="shop1.html">
+            <section class="prod">
+            <img src="images/lavender_field_oil.jpg"/>
+            <h2><span class="info">Lavender Field Diffuser  8 oz. $22.99</span></h2>
+            </section>
+            </a>
+        
+        <a href="shop1.html">
+            <section class="prod">
+            <img src="images/the_vert_oil.jpg"/>
+            <h2><span class="info">Fig Tree Diffuser 8 oz. $22.99</span></h2>
+            </section>
+            </a>
+        
+         <a href="shop1.html">
+            <section class="prod">
+            <img src="images/yuzu_citrus_oil.jpg"/>
+            <h2><span class="info">Fig Tree Diffuser 8 oz. $22.99</span></h2>
+            </section>
+            </a>
+         <!--script for slider and menu-->
+            <script type="text/javascript">
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+            </script>
+            <script type="text/javascript">
+			$(document).ready(function(){
+			$('.bxslider').bxSlider();
+			});
+            </script>
+    
+        </body>
+    <!--end of body, beginning footer-->
+    <footer>
+        <section class="social">
+            <a href="https://www.facebook.com/bloomessential/"><img src="images/fb.png">
+            </a>
+        </section>
+        <section class="social">
+            <a href="https://twitter.com/?lang=en"><img src="images/tw.png"></a>
+        </section>
+        <section class="social">
+            <a href="https://www.instagram.com/?hl=en"><img src="images/in.png">
+            </a>
+        </section>
+        
+        <h3>QUICK LINKS <br> 
+            <a href="#">About</a> <br> 
+            <a href="#">FAQ</a> <br> 
+            <a href="#">Press</a> <br> 
+            <a href="#">Candle Safety</a> <br> 
+            <a href="#">Our Scents</a> <br> 
+            <a href="#">Terms &amp; Conditions</a> <br> 
+            <a href="#">Privacy Policy</a> <br> 
+            <a href="#">Shipping &amp; Returns</a> <br> 
+            <a href="#">Customer Reviews</a>
+        </h3>
+        
+        <section class="card">
+            <img src="images/express.png">
+        </section>
+        <section class="card">
+            <img src="images/visa.png">
+        </section>
+        <section class="card">
+            <img src="images/discover.png">
+        </section>
+        <section class="card">
+            <img src="images/mastercard.png">
+        </section>
+        
+        <h4>
+        Copyright &copy; 2017 BLOOM | All Rights Reserved
+        </h4>
+    </footer>
+    
+</html>

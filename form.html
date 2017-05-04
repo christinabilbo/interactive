@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        
+        <!--Don't forget to fill these out!-->
+        <title>Checkout</title>
+        <meta name="description" content="Soy Candle Company" />
+        
+        
+        <!--Links to the main Style Sheet-->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        
+        <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+        <script src="js/modernizr.js"></script>
+        
+        <!--Makes the site so it won't scale down on small devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        
+		<script src="jquery.bxslider.min.js"></script>
+		<!-- bxSlider CSS file -->
+		<link href="jquery.bxslider.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <!--contains nav-->
+        <div class="wrapper">
+            <div id="cart">
+                <a href="form.html">
+                <img src="images/cart_icon.png">
+                </a>
+            </div>
+            
+            <a href="#" onclick="toggle_visibility('menu');">
+                <nav class="menu_button nodesk">&#9776;</nav>
+            </a>
+
+            <nav id="menu">
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="candles.html"><li>SHOP</li></a>
+                    <a href="form.html"><li>ABOUT</li></a>
+                    <a href="#"><li>CONTACT</li></a>
+                    <a href="sign%20in.html"><li>LOGIN</li></a>
+                </ul>
+            </nav>
+        </div>
+        
+        <!--contains logo-->
+        <div class="bar">
+          <div id="logo">
+              <a href="index.html"><img src="images/logo.png"/></a>
+            </div>
+        </div>
+        
+        <section class="lav">
+            <img src="images/lavender_field.jpg">
+        </section>
+        
+        <h2>
+        <span class="descript">LAVENDER FIELD<br>8 oz. Soy Candle</span>
+        </h2>
+        
+        <h2>
+            <span class="total">TOTAL BEFORE TAX<br>$22.99</span>
+        </h2>
+        
+       <div class="product">
+       </div>
+        
+        <form action="#">
+                      
+            <p>
+                <br>
+                Shipping Information:<br><br>
+    
+                Name<br><br><input type="input" /><br><br>
+                
+                Email<br><br><input type="email" /><br><br>
+    
+                Address Line 1<br><br><input type="input" /><br><br>
+    
+                Address Line 2<br><br><input type="input" /><br><br>
+    
+                City<br><br><input type="input" /><br><br>
+    
+                State<br><br><input type="input" /><br><br>
+    
+                Zip Code<br><br><input type="number" /><br><br>
+    
+                Phone Number<br><br><input type="number" /><br><br>
+    
+                Name on Card<br><br><input type="input" /><br><br>
+
+                Card Number<br><br><input type="number" /><br><br>
+    
+                Expiration Date<br><br><input type="month" /><br><br>
+
+                CVV<br><br><input type="number" /><br><br><br>
+
+                CHECKOUT<br><br><input type="Submit" value="Submit" />
+          </p> 
+        </form>        
+        <script type="text/javascript">
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+            </script>
+    </body>
+   <footer>
+        <section class="social">
+            <a href="https://www.facebook.com/bloomessential/"><img src="images/fb.png"></a>
+        </section>
+        <section class="social">
+            <a href="https://twitter.com/?lang=en"><img src="images/tw.png"></a>
+        </section>
+        <section class="social">
+            <a href="https://www.instagram.com/?hl=en"><img src="images/in.png"></a>
+        </section>
+        
+        <h3>QUICK LINKS <br> 
+            <a href="#">About</a> <br> 
+            <a href="#">FAQ</a> <br> 
+            <a href="#">Press</a> <br> 
+            <a href="#">Candle Safety</a> <br> 
+            <a href="#">Our Scents</a> <br> 
+            <a href="#">Terms &amp; Conditions</a> <br> 
+            <a href="#">Privacy Policy</a> <br> 
+            <a href="#">Shipping &amp; Returns</a> <br> 
+            <a href="#">Customer Reviews</a>
+        </h3>
+        
+        <section class="card">
+            <img src="images/express.png">
+        </section>
+        <section class="card">
+            <img src="images/visa.png">
+        </section>
+        <section class="card">
+            <img src="images/discover.png">
+        </section>
+        <section class="card">
+            <img src="images/mastercard.png">
+        </section>
+        
+        <h4>
+        Copyright &copy; 2017 BLOOM | All Rights Reserved
+        </h4>
+    </footer>
+</html>
